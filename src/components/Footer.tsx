@@ -13,7 +13,7 @@ export default function Footer() {
             {/* logo-black.png available for any future light-background use */}
             <p className="text-apex-steel text-xs leading-relaxed">
               Professional pressure washing for residential and commercial
-              properties in the Pocono Mountains and surrounding areas.
+              properties in the Tri State Area.
             </p>
           </div>
 
@@ -56,8 +56,8 @@ export default function Footer() {
                   info@apexsurfacesolutions.com
                 </a>
               </li>
-              <li>Pocono Mountains, PA &amp; Surrounding Areas</li>
-              <li>Mon–Sat: 7am – 6pm</li>
+              <li>NY, NJ, PA, CT &amp; Surrounding Areas</li>
+              <li>24/7</li>
             </ul>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Apex Surface Solutions. All rights reserved.
           </p>
           <p className="text-white/20 text-xs">
-            Built with Next.js · Hosted on Vercel
+            
           </p>
         </div>
       </div>

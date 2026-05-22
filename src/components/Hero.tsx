@@ -35,26 +35,26 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-28 pb-20">
         {/* Tag line */}
-        <div className="fade-up opacity-start inline-flex items-center gap-2 border border-apex-accent/40 bg-apex-accent/10 text-apex-bright text-xs font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-8">
+        <div className="fade-up inline-flex items-center gap-2 border border-apex-accent/40 bg-apex-accent/10 text-apex-bright text-xs font-semibold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-apex-bright animate-pulse" />
           Residential &amp; Commercial
         </div>
 
         {/* Headline */}
-        <h1 className="fade-up opacity-start font-display text-5xl sm:text-7xl lg:text-8xl text-white uppercase leading-none tracking-tight mb-6">
+        <h1 className="fade-up font-display text-5xl sm:text-7xl lg:text-8xl text-white uppercase leading-none tracking-tight mb-6">
           We Make Surfaces{" "}
           <span className="text-gradient block mt-2">Look New Again</span>
         </h1>
 
         {/* Sub-headline */}
-        <p className="fade-up opacity-start max-w-2xl mx-auto text-apex-steel text-lg sm:text-xl leading-relaxed mb-10">
+        <p className="fade-up max-w-2xl mx-auto text-apex-steel text-lg sm:text-xl leading-relaxed mb-10">
           Apex Surface Solutions delivers powerful, professional pressure washing
           across driveways, decks, roofs, siding, and commercial properties —
           leaving every surface spotless.
         </p>
 
         {/* CTAs */}
-        <div className="fade-up opacity-start flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="fade-up flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
             className="bg-apex-accent hover:bg-apex-bright text-white font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded transition-all duration-200 shadow-lg shadow-apex-accent/30 hover:shadow-apex-bright/40 hover:-translate-y-0.5"
@@ -70,7 +70,7 @@ export default function Hero() {
         </div>
 
         {/* Trust badges */}
-        <div className="fade-up opacity-start mt-16 flex flex-wrap justify-center gap-8 text-apex-steel text-sm">
+        <div className="fade-up mt-16 flex flex-wrap justify-center gap-8 text-apex-steel text-sm">
           {[
             { icon: "✦", text: "Fully Insured" },
             { icon: "✦", text: "Eco-Friendly Solutions" },

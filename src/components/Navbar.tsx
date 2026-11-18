@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-3">
-            <Image src="/logo-white.png" alt="Apex Surface Solutions" width={160} height={40} className="h-10 w-auto" />
+            <Image src="/logo-white.png" alt="Apex Surface Solutions" width={160} height={90} className="h-16 w-auto" />
 
         </a>
 

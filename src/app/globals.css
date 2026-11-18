@@ -28,3 +28,43 @@
 
   .opacity-start { opacity: 0; }
 }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Before/After wash background ---- */
+.wash-reveal { animation: washReveal 16s ease-in-out infinite; }
+.wash-line   { animation: washLine 16s ease-in-out infinite; }
+.wash-label-before { animation: labelBefore 16s ease-in-out infinite; }
+.wash-label-after  { animation: labelAfter 16s ease-in-out infinite; }
+
+@keyframes washReveal {
+  0%, 8%    { clip-path: inset(0 100% 0 0); }
+  44%, 58%  { clip-path: inset(0 0 0 0); }
+  94%, 100% { clip-path: inset(0 100% 0 0); }
+}
+@keyframes washLine {
+  0%, 8%    { left: 0%;   opacity: 0; }
+  12%       { opacity: 1; }
+  40%       { opacity: 1; }
+  44%, 58%  { left: 100%; opacity: 0; }
+  62%       { opacity: 1; }
+  90%       { opacity: 1; }
+  94%, 100% { left: 0%;   opacity: 0; }
+}
+@keyframes labelBefore {
+  0%, 20%   { opacity: 1; }
+  30%, 70%  { opacity: 0; }
+  90%, 100% { opacity: 1; }
+}
+@keyframes labelAfter {
+  0%, 30%   { opacity: 0; }
+  44%, 58%  { opacity: 1; }
+  72%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wash-reveal { animation: none; clip-path: inset(0 0 0 0); }
+  .wash-line, .wash-label-before, .wash-label-after { animation: none; opacity: 0; }
+}

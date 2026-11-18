@@ -1,8 +1,8 @@
 const stats = [
-  { value: "500+", label: "Jobs Completed" },
-  { value: "100%", label: "Satisfaction Rate" },
-  { value: "5★", label: "Average Rating" },
-  { value: "1-Day", label: "Turnaround" },
+  { value: "Free", label: "Estimates" },
+  { value: "3-in-1", label: "Wash · Carpet · Snow" },
+  { value: "365", label: "Days a Year" },
+  { value: "Fast", label: "Response" },
 ];
 
 const reasons = [
@@ -11,8 +11,8 @@ const reasons = [
     desc: "We carry full liability insurance so you never take on risk when you hire us. Your property is always protected.",
   },
   {
-    title: "Eco-Friendly Products",
-    desc: "Our biodegradable detergents are safe for your plants, pets, and the water table — powerful clean, responsible chemistry.",
+    title: "Year-Round Service",
+    desc: "Pressure washing in the warm months, snow removal in the cold. One company to call, every season.",
   },
   {
     title: "Professional Equipment",

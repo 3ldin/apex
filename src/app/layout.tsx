@@ -16,12 +16,12 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Apex Surface Solutions | Professional Pressure Washing",
+  title: "Apex Surface Solutions | Pressure Washing, Carpet Cleaning & Snow Removal",
   description:
-    "Apex Surface Solutions delivers professional pressure washing services. Driveways, decks, roofs, commercial buildings — we restore every surface to its best.",
+    "Apex Surface Solutions - professional pressure washing, carpet cleaning, and snow removal for homes and businesses. Call for a free estimate.",
   openGraph: {
     title: "Apex Surface Solutions",
-    description: "Professional pressure washing — residential & commercial.",
+    description: "Pressure washing, carpet cleaning & snow removal - residential & commercial.",
     type: "website",
   },
 };

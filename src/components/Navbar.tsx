@@ -1,12 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { site } from "@/data/site";
+import { hasGallery } from "@/data/photos";
 
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Why Us", href: "#why-us" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Testimonials", href: "#testimonials" },
+  ...(hasGallery ? [{ label: "Gallery", href: "#gallery" }] : []),
   { label: "Contact", href: "#contact" },
 ];
 
@@ -28,10 +29,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-3">
-            <Image src="/logo-white.png" alt="Apex Surface Solutions" width={160} height={90} className="h-16 w-auto" />
+            <Image src="/logo-white.png" alt="Apex Surface Solutions" width={315} height={138} priority className="h-20 md:h-28 w-auto" />
 
         </a>
 
@@ -47,10 +48,10 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={site.phoneHref}
             className="bg-apex-accent hover:bg-apex-bright text-white text-sm font-semibold tracking-wider uppercase px-5 py-2 rounded transition-colors duration-200"
           >
-            Free Quote
+            {site.phoneDisplay}
           </a>
         </nav>
 
